@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会話ゲーム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <img id="character-image" src="images/img1.jpg" alt="キャラクター画像" onerror="this.src='images/default.jpg'; this.alt='画像が見つかりません';">
+        <div id="dialogue">こんにちは！どうしますか？</div>
+        <div class="options">
+            <button onclick="chooseOption(1)">選択肢 1</button>
+            <button onclick="chooseOption(2)">選択肢 2</button>
+            <button onclick="chooseOption(3)">選択肢 3</button>
+        </div>
+    </div>
+    <audio id="bgm" src="audio/bgm.mp3" loop onerror="this.src='audio/default.mp3'; this.alt='音楽が見つかりません';"></audio>
+    <audio id="se" src="audio/se.mp3" onerror="this.src='audio/default.mp3'; this.alt='効果音が見つかりません';"></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
